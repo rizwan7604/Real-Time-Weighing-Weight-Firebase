@@ -6,19 +6,19 @@
 #endif
 
 // Pins
-const int HX711_dout = 23; // MCU > HX711 dout pin
-const int HX711_sck = 22; // MCU > HX711 sck pin
+const int HX711_dout = 23; // MCU > HX711 dout pin D23
+const int HX711_sck = 22; // MCU > HX711 sck pin D22
 
 // HX711 constructor
 HX711_ADC LoadCell(HX711_dout, HX711_sck);
 
 // WiFi credentials
-const char* ssid = "TrojanHorse";
-const char* password = "virus.bat";
+const char* ssid = "*************";
+const char* password = "**********";
 
 // Firebase credentials
-#define FIREBASE_HOST "https://real-time-wieght-default-rtdb.asia-southeast1.firebasedatabase.app"
-#define FIREBASE_AUTH "1MwtgVlxpfqUqnudaBXcqT4RVyK7XVQHvBXL96Uv"
+#define FIREBASE_HOST "Database-URL"
+#define FIREBASE_AUTH "Database Sercet"
 
 // Firebase objects
 FirebaseData firebaseData;
